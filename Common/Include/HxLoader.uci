@@ -1,0 +1,79 @@
+struct HxPreviewEntry
+{
+    var const string MapName;
+    var const Material Preview;
+};
+
+struct HxOfficialEquivalent
+{
+    var const string MapName;
+    var const string OfficialName;
+};
+
+var protected const array<HxPreviewEntry> Entries;
+var protected const array<HxOfficialEquivalent> OfficialEquivalents;
+
+static function string GetItemName(string MapName)
+{
+    local int Compare;
+    local int Middle;
+    local int Low;
+    local int High;
+
+    if (default.Entries.Length > 0)
+    {
+        Low = 0;
+        High = default.Entries.Length;
+        while (Low <= High)
+        {
+            Middle = (Low + High) / 2;
+            Compare = StrCmp(MapName, default.Entries[Middle].MapName);
+            if (Compare == 0)
+            {
+                return string(default.Entries[Middle].Preview);
+            }
+            if (Compare > 0)
+            {
+                Low = Middle + 1;
+            }
+            else
+            {
+                High = Middle - 1;
+            }
+        }
+    }
+    return SearchOfficialEquivalent(MapName);
+}
+
+static function string SearchOfficialEquivalent(string MapName)
+{
+    local int Compare;
+    local int Middle;
+    local int Low;
+    local int High;
+
+    if (default.OfficialEquivalents.Length > 0)
+    {
+        Low = 0;
+        High = default.OfficialEquivalents.Length;
+        while (Low <= High)
+        {
+            Middle = (Low + High) / 2;
+            Compare = StrCmp(MapName, default.OfficialEquivalents[Middle].MapName);
+            if (Compare == 0)
+            {
+                return class'CacheManager'.static.GetMapRecord(
+                    default.OfficialEquivalents[Middle].OfficialName).ScreenshotRef;
+            }
+            if (Compare > 0)
+            {
+                Low = Middle + 1;
+            }
+            else
+            {
+                High = Middle - 1;
+            }
+        }
+    }
+    return "";
+}

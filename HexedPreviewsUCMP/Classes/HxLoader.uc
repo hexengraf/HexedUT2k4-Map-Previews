@@ -1,0 +1,53 @@
+class HxLoader extends Object
+    abstract;
+
+#include Classes\Include\HxLoader.uci
+
+defaultproperties
+{
+    // THIS ARRAY MUST BE SORTED IN LEXICOGRAPHIC ORDER
+    Entries(0)=(MapName="AS-UCMP2-Cruciatus",Preview=Material'HxPreviewsUCMP.AS_Cruciatus')
+    Entries(1)=(MapName="AS-UCMP3-IslandStrike",Preview=Material'HxPreviewsUCMP.AS_IslandStrike')
+    Entries(2)=(MapName="BR-UCMP2-Sublimity",Preview=Material'HxPreviewsUCMP.BR_Sublimity')
+    Entries(3)=(MapName="CTF-UCMP-Aithanarid",Preview=Material'HxPreviewsUCMP.CTF_Aithanarid')
+    Entries(4)=(MapName="CTF-UCMP-Aquatica",Preview=Material'HxPreviewsUCMP.CTF_Aquatica')
+    Entries(5)=(MapName="CTF-UCMP-DecaneCaldera",Preview=Material'HxPreviewsUCMP.CTF_DecaneCaldera')
+    Entries(6)=(MapName="CTF-UCMP2-Campgrounds",Preview=Material'HxPreviewsUCMP.CTF_Campgrounds')
+    Entries(7)=(MapName="CTF-UCMP2-Enlightenment",Preview=Material'HxPreviewsUCMP.CTF_Enlightenment')
+    Entries(8)=(MapName="CTF-UCMP2-Orcus",Preview=Material'HxPreviewsUCMP.CTF_Orcus')
+    Entries(9)=(MapName="CTF-UCMP2-RottenCity",Preview=Material'HxPreviewsUCMP.CTF_RottenCity')
+    Entries(10)=(MapName="CTF-UCMP2-Sublimity",Preview=Material'HxPreviewsUCMP.CTF_Sublimity')
+    Entries(11)=(MapName="CTF-UCMP2-Vadamerca",Preview=Material'HxPreviewsUCMP.CTF_Vadamerca')
+    Entries(12)=(MapName="CTF-UCMP3-Tidal",Preview=Material'HxPreviewsUCMP.CTF_Tidal')
+    Entries(13)=(MapName="CTF-UCMP4-Talya",Preview=Material'HxPreviewsUCMP.CTF_Talya')
+    Entries(14)=(MapName="CTF-UCMP4-Virility",Preview=Material'HxPreviewsUCMP.CTF_Virility')
+    Entries(15)=(MapName="DM-UCMP-1on1-Derelict",Preview=Material'HxPreviewsUCMP.DM_1on1_Derelict')
+    Entries(16)=(MapName="DM-UCMP-BloodRun",Preview=Material'HxPreviewsUCMP.DM_BloodRun')
+    Entries(17)=(MapName="DM-UCMP-Contrast",Preview=Material'HxPreviewsUCMP.DM_Contrast')
+    Entries(18)=(MapName="DM-UCMP-ImMortalis",Preview=Material'HxPreviewsUCMP.DM_ImMortalis')
+    Entries(19)=(MapName="DM-UCMP-PleasantValley",Preview=Material'HxPreviewsUCMP.DM_PleasantValley')
+    Entries(20)=(MapName="DM-UCMP-RancidMetal",Preview=Material'HxPreviewsUCMP.DM_RancidMetal')
+    Entries(21)=(MapName="DM-UCMP-ThePits",Preview=Material'HxPreviewsUCMP.DM_ThePits')
+    Entries(22)=(MapName="DM-UCMP-Xanadu",Preview=Material'HxPreviewsUCMP.DM_Xanadu')
+    Entries(23)=(MapName="DM-UCMP2-Adamantium",Preview=Material'HxPreviewsUCMP.DM_Adamantium')
+    Entries(24)=(MapName="DM-UCMP2-Churn",Preview=Material'HxPreviewsUCMP.DM_Churn')
+    Entries(25)=(MapName="DM-UCMP2-Dynarak",Preview=Material'HxPreviewsUCMP.DM_Dynarak')
+    Entries(26)=(MapName="DM-UCMP2-Hieron",Preview=Material'HxPreviewsUCMP.DM_Hieron')
+    Entries(27)=(MapName="DM-UCMP2-Saiko",Preview=Material'HxPreviewsUCMP.DM_Saiko')
+    Entries(28)=(MapName="DM-UCMP2-Taron",Preview=Material'HxPreviewsUCMP.DM_Taron')
+    Entries(29)=(MapName="DM-UCMP2-Thebes",Preview=Material'HxPreviewsUCMP.DM_Thebes')
+    Entries(30)=(MapName="DM-UCMP3-Altitude",Preview=Material'HxPreviewsUCMP.DM_Altitude')
+    Entries(31)=(MapName="DM-UCMP3-Gantham",Preview=Material'HxPreviewsUCMP.DM_Gantham')
+    Entries(32)=(MapName="DM-UCMP3-Glorian",Preview=Material'HxPreviewsUCMP.DM_Glorian')
+    Entries(33)=(MapName="DM-UCMP3-Sympathy",Preview=Material'HxPreviewsUCMP.DM_Sympathy')
+    Entries(34)=(MapName="DM-UCMP4-Elucidation",Preview=Material'HxPreviewsUCMP.DM_Elucidation')
+    Entries(35)=(MapName="DM-UCMP4-Mania",Preview=Material'HxPreviewsUCMP.DM_Mania')
+    Entries(36)=(MapName="DM-UCMP4-Propaganda",Preview=Material'HxPreviewsUCMP.DM_Propaganda')
+    Entries(37)=(MapName="DM-UCMP4-Speos",Preview=Material'HxPreviewsUCMP.DM_Speos')
+    Entries(38)=(MapName="DOM-UCMP-Cerebral",Preview=Material'HxPreviewsUCMP.DOM_Cerebral')
+    Entries(39)=(MapName="DOM-UCMP2-1on1-Smelter",Preview=Material'HxPreviewsUCMP.DOM_1on1_Smelter')
+    Entries(40)=(MapName="DOM-UCMP2-Meskhenet",Preview=Material'HxPreviewsUCMP.DOM_Meskhenet')
+    Entries(41)=(MapName="ONS-UCMP-ABC",Preview=Material'HxPreviewsUCMP.ONS_ABC')
+    Entries(42)=(MapName="ONS-UCMP-ABC-ECE",Preview=Material'HxPreviewsUCMP.ONS_ABC')
+    Entries(43)=(MapName="VCTF-UCMP2-RiverCanyon2",Preview=Material'HxPreviewsUCMP.VCTF_RiverCanyon2')
+}
