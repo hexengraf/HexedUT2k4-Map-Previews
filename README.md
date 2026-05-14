@@ -15,11 +15,11 @@ Let's say you only want HexedPreviewsBASE. You need to add it to your `ServerPac
 ```ini
 [Engine.GameEngine]
 ; Add it at the end of the ServerPackages list
-ServerPackages=HexedPreviewsBASEv1
+ServerPackages=HexedPreviewsBASEv2
 
 [HexedVOTEv7.MutHexedVOTE]
 ; All packages from this repository use HxLoader as the Loader name, but custom packages might have different names.
-MapPreviewLoaders=HexedPreviewsBASEv1.HxLoader
+MapPreviewLoaders=HexedPreviewsBASEv2.HxLoader
 ```
 
 ## Contributing (or creating your own packages)
