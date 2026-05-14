@@ -117,7 +117,15 @@ There are two things you must follow before submitting your screenshots to this 
 * The screenshots must be 512x256 pixels.
 * Use DDS format with DXT1 compression and MipMaps disabled.
 
-A lot of the screenshots directly extract from maps have MipMaps (it was useful for really old hardware), but the focus here is minimizing size.
+A lot of the screenshots directly extracted from maps have MipMaps (it was useful for really old hardware), but the focus here is minimizing size.
+
+### Behind the curtains (or "I don't want to follow your template")
+
+You can create compatible packages without following the `HxLoader.uci` template. All you need is a class that inherits from Object and overrides the static method `GetItemName`.
+The expected behavior from `GetItemName` is to receive a map name and return the corresponding texture name. How you implement this internally is up to you.
+The implementation inside `HxLoader.uci` uses a binary search over all entries to find the right texture, hence the need of lexicographic order.
+
+Keep in mind, if you want to contribute your package to this repository, you should use `HxLoader.uci`.
 
 ## Known issues
 
